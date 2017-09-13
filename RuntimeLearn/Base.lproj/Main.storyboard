@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,7 +20,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGK-y2-T2S">
+                                <rect key="frame" x="0.0" y="70" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dUg-WK-Fie"/>
+                                </constraints>
+                                <state key="normal" title="获取变量"/>
+                                <connections>
+                                    <action selector="doGetAllVariable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FpU-dd-9Lf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMF-0z-XFg">
+                                <rect key="frame" x="0.0" y="115" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="获取方法"/>
+                                <connections>
+                                    <action selector="doGetAllMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3G-GU-JAh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWc-al-jWr">
+                                <rect key="frame" x="0.0" y="160" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="改变私有变量的值"/>
+                                <connections>
+                                    <action selector="doChangeVariableValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pit-9B-I0C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Eb-Ig-90P">
+                                <rect key="frame" x="-0.5" y="205" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="添加新方法"/>
+                                <connections>
+                                    <action selector="doAddMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHQ-w5-eIg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08D-nP-ivt">
+                                <rect key="frame" x="-0.5" y="250" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="添加新属性"/>
+                                <connections>
+                                    <action selector="doAddVariable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BiF-pI-O8F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bju-Nz-LM1">
+                                <rect key="frame" x="-0.5" y="295" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="交换两个方法"/>
+                                <connections>
+                                    <action selector="doReplaceMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8m8-Mo-eam"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="08D-nP-ivt" firstAttribute="top" secondItem="1Eb-Ig-90P" secondAttribute="bottom" constant="15" id="5aI-Ob-nm5"/>
+                            <constraint firstItem="SGK-y2-T2S" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5oH-fg-84P"/>
+                            <constraint firstItem="BMF-0z-XFg" firstAttribute="centerX" secondItem="SGK-y2-T2S" secondAttribute="centerX" id="CE6-Eo-noT"/>
+                            <constraint firstItem="KWc-al-jWr" firstAttribute="width" secondItem="BMF-0z-XFg" secondAttribute="width" id="E62-JV-grl"/>
+                            <constraint firstItem="bju-Nz-LM1" firstAttribute="width" secondItem="08D-nP-ivt" secondAttribute="width" id="HbT-8b-RLN"/>
+                            <constraint firstItem="SGK-y2-T2S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="MbA-g7-FiB"/>
+                            <constraint firstItem="BMF-0z-XFg" firstAttribute="top" secondItem="SGK-y2-T2S" secondAttribute="bottom" constant="15" id="OMs-hn-pPr"/>
+                            <constraint firstItem="BMF-0z-XFg" firstAttribute="height" secondItem="SGK-y2-T2S" secondAttribute="height" id="Riu-ZB-i0z"/>
+                            <constraint firstItem="KWc-al-jWr" firstAttribute="top" secondItem="BMF-0z-XFg" secondAttribute="bottom" constant="15" id="S6q-Bg-7Xw"/>
+                            <constraint firstItem="08D-nP-ivt" firstAttribute="centerX" secondItem="1Eb-Ig-90P" secondAttribute="centerX" id="bEx-eu-the"/>
+                            <constraint firstItem="SGK-y2-T2S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bW7-cQ-j2Q"/>
+                            <constraint firstItem="08D-nP-ivt" firstAttribute="height" secondItem="1Eb-Ig-90P" secondAttribute="height" id="bqb-pd-Vyi"/>
+                            <constraint firstItem="1Eb-Ig-90P" firstAttribute="centerX" secondItem="KWc-al-jWr" secondAttribute="centerX" id="c5u-Ya-NPU"/>
+                            <constraint firstItem="1Eb-Ig-90P" firstAttribute="top" secondItem="KWc-al-jWr" secondAttribute="bottom" constant="15" id="cHU-yp-jdE"/>
+                            <constraint firstItem="bju-Nz-LM1" firstAttribute="top" secondItem="08D-nP-ivt" secondAttribute="bottom" constant="15" id="cVB-P2-778"/>
+                            <constraint firstItem="bju-Nz-LM1" firstAttribute="centerX" secondItem="08D-nP-ivt" secondAttribute="centerX" id="eiJ-4P-Mqb"/>
+                            <constraint firstItem="KWc-al-jWr" firstAttribute="height" secondItem="BMF-0z-XFg" secondAttribute="height" id="emL-qn-jIK"/>
+                            <constraint firstItem="1Eb-Ig-90P" firstAttribute="width" secondItem="KWc-al-jWr" secondAttribute="width" id="fep-HZ-kKx"/>
+                            <constraint firstItem="bju-Nz-LM1" firstAttribute="height" secondItem="08D-nP-ivt" secondAttribute="height" id="h5b-AC-H10"/>
+                            <constraint firstItem="BMF-0z-XFg" firstAttribute="width" secondItem="SGK-y2-T2S" secondAttribute="width" id="o0P-Go-j9x"/>
+                            <constraint firstItem="KWc-al-jWr" firstAttribute="centerX" secondItem="BMF-0z-XFg" secondAttribute="centerX" id="r2j-pr-J8e"/>
+                            <constraint firstItem="1Eb-Ig-90P" firstAttribute="height" secondItem="KWc-al-jWr" secondAttribute="height" id="rw5-v3-9Ir"/>
+                            <constraint firstItem="08D-nP-ivt" firstAttribute="width" secondItem="1Eb-Ig-90P" secondAttribute="width" id="tFL-bL-2yR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

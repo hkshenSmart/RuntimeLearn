@@ -10,4 +10,6 @@
 
 @interface Person (Sex)
 
+@property (nonatomic, strong) NSString *sex;
+
 @end

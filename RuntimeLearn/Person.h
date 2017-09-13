@@ -10,4 +10,9 @@
 
 @interface Person : NSObject
 
+@property (nonatomic, assign) int age; // 属性
+
+- (void)doWork;
+- (void)doEat;
+
 @end

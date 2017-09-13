@@ -16,6 +16,8 @@
 		D7BD1AFB1F67C54B00FBAF99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BD1AF91F67C54B00FBAF99 /* LaunchScreen.storyboard */; };
 		D7BD1B061F67C54B00FBAF99 /* RuntimeLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD1B051F67C54B00FBAF99 /* RuntimeLearnTests.m */; };
 		D7BD1B111F67C54B00FBAF99 /* RuntimeLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD1B101F67C54B00FBAF99 /* RuntimeLearnUITests.m */; };
+		D7BD1B201F67D98000FBAF99 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD1B1F1F67D98000FBAF99 /* Person.m */; };
+		D7BD1B261F68446600FBAF99 /* Person+Sex.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD1B251F68446600FBAF99 /* Person+Sex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		D7BD1B0C1F67C54B00FBAF99 /* RuntimeLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BD1B101F67C54B00FBAF99 /* RuntimeLearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeLearnUITests.m; sourceTree = "<group>"; };
 		D7BD1B121F67C54B00FBAF99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BD1B1E1F67D98000FBAF99 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D7BD1B1F1F67D98000FBAF99 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D7BD1B241F68446600FBAF99 /* Person+Sex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+Sex.h"; sourceTree = "<group>"; };
+		D7BD1B251F68446600FBAF99 /* Person+Sex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+Sex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				D7BD1AFC1F67C54B00FBAF99 /* Info.plist */,
 				D7BD1AF41F67C54B00FBAF99 /* RuntimeLearn.xcdatamodeld */,
 				D7BD1AE81F67C54B00FBAF99 /* Supporting Files */,
+				D7BD1B1E1F67D98000FBAF99 /* Person.h */,
+				D7BD1B1F1F67D98000FBAF99 /* Person.m */,
+				D7BD1B241F68446600FBAF99 /* Person+Sex.h */,
+				D7BD1B251F68446600FBAF99 /* Person+Sex.m */,
 			);
 			path = RuntimeLearn;
 			sourceTree = "<group>";
@@ -281,7 +291,9 @@
 			files = (
 				D7BD1AF01F67C54B00FBAF99 /* ViewController.m in Sources */,
 				D7BD1AED1F67C54B00FBAF99 /* AppDelegate.m in Sources */,
+				D7BD1B201F67D98000FBAF99 /* Person.m in Sources */,
 				D7BD1AEA1F67C54B00FBAF99 /* main.m in Sources */,
+				D7BD1B261F68446600FBAF99 /* Person+Sex.m in Sources */,
 				D7BD1AF61F67C54B00FBAF99 /* RuntimeLearn.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
