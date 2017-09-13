@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGK-y2-T2S">
-                                <rect key="frame" x="0.0" y="70" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dUg-WK-Fie"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMF-0z-XFg">
-                                <rect key="frame" x="0.0" y="115" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="95" width="375" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="获取方法"/>
                                 <connections>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWc-al-jWr">
-                                <rect key="frame" x="0.0" y="160" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="改变私有变量的值"/>
                                 <connections>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Eb-Ig-90P">
-                                <rect key="frame" x="-0.5" y="205" width="375" height="30"/>
+                                <rect key="frame" x="-0.5" y="185" width="375" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="添加新方法"/>
                                 <connections>
@@ -57,7 +57,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08D-nP-ivt">
-                                <rect key="frame" x="-0.5" y="250" width="375" height="30"/>
+                                <rect key="frame" x="-0.5" y="230" width="375" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="添加新属性"/>
                                 <connections>
@@ -65,25 +65,46 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bju-Nz-LM1">
-                                <rect key="frame" x="-0.5" y="295" width="375" height="30"/>
+                                <rect key="frame" x="-0.5" y="275" width="375" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="交换两个方法"/>
                                 <connections>
                                     <action selector="doReplaceMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8m8-Mo-eam"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdA-za-JpA">
+                                <rect key="frame" x="-0.5" y="320" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="动态添加方法拦截调用"/>
+                                <connections>
+                                    <action selector="doDynamicAddMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAB-Mj-Aae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg4-gU-ZNg">
+                                <rect key="frame" x="-0.5" y="365" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Dog的对象来处理方法"/>
+                                <connections>
+                                    <action selector="doForwardingTarget:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KQJ-dB-3S1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="QdA-za-JpA" firstAttribute="height" secondItem="bju-Nz-LM1" secondAttribute="height" id="0cU-8e-koc"/>
+                            <constraint firstItem="QdA-za-JpA" firstAttribute="width" secondItem="bju-Nz-LM1" secondAttribute="width" id="2iH-9J-xuI"/>
                             <constraint firstItem="08D-nP-ivt" firstAttribute="top" secondItem="1Eb-Ig-90P" secondAttribute="bottom" constant="15" id="5aI-Ob-nm5"/>
                             <constraint firstItem="SGK-y2-T2S" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5oH-fg-84P"/>
                             <constraint firstItem="BMF-0z-XFg" firstAttribute="centerX" secondItem="SGK-y2-T2S" secondAttribute="centerX" id="CE6-Eo-noT"/>
                             <constraint firstItem="KWc-al-jWr" firstAttribute="width" secondItem="BMF-0z-XFg" secondAttribute="width" id="E62-JV-grl"/>
                             <constraint firstItem="bju-Nz-LM1" firstAttribute="width" secondItem="08D-nP-ivt" secondAttribute="width" id="HbT-8b-RLN"/>
-                            <constraint firstItem="SGK-y2-T2S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="MbA-g7-FiB"/>
+                            <constraint firstItem="SGK-y2-T2S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="MbA-g7-FiB"/>
                             <constraint firstItem="BMF-0z-XFg" firstAttribute="top" secondItem="SGK-y2-T2S" secondAttribute="bottom" constant="15" id="OMs-hn-pPr"/>
                             <constraint firstItem="BMF-0z-XFg" firstAttribute="height" secondItem="SGK-y2-T2S" secondAttribute="height" id="Riu-ZB-i0z"/>
                             <constraint firstItem="KWc-al-jWr" firstAttribute="top" secondItem="BMF-0z-XFg" secondAttribute="bottom" constant="15" id="S6q-Bg-7Xw"/>
+                            <constraint firstItem="QdA-za-JpA" firstAttribute="top" secondItem="bju-Nz-LM1" secondAttribute="bottom" constant="15" id="SQh-kw-xXg"/>
+                            <constraint firstItem="QdA-za-JpA" firstAttribute="centerX" secondItem="bju-Nz-LM1" secondAttribute="centerX" id="X5m-SF-HTm"/>
+                            <constraint firstItem="xg4-gU-ZNg" firstAttribute="width" secondItem="QdA-za-JpA" secondAttribute="width" id="Z3E-J2-hHk"/>
                             <constraint firstItem="08D-nP-ivt" firstAttribute="centerX" secondItem="1Eb-Ig-90P" secondAttribute="centerX" id="bEx-eu-the"/>
                             <constraint firstItem="SGK-y2-T2S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bW7-cQ-j2Q"/>
                             <constraint firstItem="08D-nP-ivt" firstAttribute="height" secondItem="1Eb-Ig-90P" secondAttribute="height" id="bqb-pd-Vyi"/>
@@ -95,9 +116,12 @@
                             <constraint firstItem="1Eb-Ig-90P" firstAttribute="width" secondItem="KWc-al-jWr" secondAttribute="width" id="fep-HZ-kKx"/>
                             <constraint firstItem="bju-Nz-LM1" firstAttribute="height" secondItem="08D-nP-ivt" secondAttribute="height" id="h5b-AC-H10"/>
                             <constraint firstItem="BMF-0z-XFg" firstAttribute="width" secondItem="SGK-y2-T2S" secondAttribute="width" id="o0P-Go-j9x"/>
+                            <constraint firstItem="xg4-gU-ZNg" firstAttribute="height" secondItem="QdA-za-JpA" secondAttribute="height" id="ock-nE-uGp"/>
                             <constraint firstItem="KWc-al-jWr" firstAttribute="centerX" secondItem="BMF-0z-XFg" secondAttribute="centerX" id="r2j-pr-J8e"/>
                             <constraint firstItem="1Eb-Ig-90P" firstAttribute="height" secondItem="KWc-al-jWr" secondAttribute="height" id="rw5-v3-9Ir"/>
                             <constraint firstItem="08D-nP-ivt" firstAttribute="width" secondItem="1Eb-Ig-90P" secondAttribute="width" id="tFL-bL-2yR"/>
+                            <constraint firstItem="xg4-gU-ZNg" firstAttribute="top" secondItem="QdA-za-JpA" secondAttribute="bottom" constant="15" id="tcT-Z7-12m"/>
+                            <constraint firstItem="xg4-gU-ZNg" firstAttribute="centerX" secondItem="QdA-za-JpA" secondAttribute="centerX" id="un7-8y-YUY"/>
                         </constraints>
                     </view>
                 </viewController>

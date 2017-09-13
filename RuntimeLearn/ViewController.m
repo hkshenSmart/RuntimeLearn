@@ -22,6 +22,8 @@
 - (IBAction)doAddMethod:(id)sender; // 添加新方法
 - (IBAction)doAddVariable:(id)sender; // 添加新属性
 - (IBAction)doReplaceMethod:(id)sender; // 交换两个方法
+- (IBAction)doDynamicAddMethod:(id)sender; // 动态添加方法拦截调用
+- (IBAction)doForwardingTarget:(id)sender; // Dog的对象来处理方法
 
 @end
 
@@ -75,6 +77,8 @@
         // @selector()中方法名称
         const char *methodName = sel_getName(sel);
         NSLog(@"方法名称:%s", methodName);
+        
+        //IMP imp = method_getImplementation(method);
     }
 }
 
@@ -120,6 +124,7 @@
     NSLog(@"new variable:%@", person.sex);
 }
 
+// 交换两个方法
 - (IBAction)doReplaceMethod:(id)sender {
     
     Method method1 = class_getInstanceMethod([person class], @selector(doWork));
@@ -127,6 +132,19 @@
     method_exchangeImplementations(method1, method2);
     
     [person doWork];  //查看交换后的结果
+}
+
+// 动态添加方法拦截调用
+- (IBAction)doDynamicAddMethod:(id)sender {
+    
+    // 隐式调用方法，方法不存在
+    [person performSelector:@selector(doTalk:) withObject:@"talk"];
+}
+
+// Dog的对象来处理方法
+- (IBAction)doForwardingTarget:(id)sender {
+    
+    [person doRunFastPerson];
 }
 
 @end

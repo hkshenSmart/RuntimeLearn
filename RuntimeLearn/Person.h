@@ -14,5 +14,6 @@
 
 - (void)doWork;
 - (void)doEat;
+- (void)doRunFastPerson;
 
 @end

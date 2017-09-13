@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7741E531F69345200B1344F /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = D7741E521F69345200B1344F /* Dog.m */; };
 		D7BD1AEA1F67C54B00FBAF99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD1AE91F67C54B00FBAF99 /* main.m */; };
 		D7BD1AED1F67C54B00FBAF99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD1AEC1F67C54B00FBAF99 /* AppDelegate.m */; };
 		D7BD1AF01F67C54B00FBAF99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD1AEF1F67C54B00FBAF99 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7741E511F69345200B1344F /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		D7741E521F69345200B1344F /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		D7BD1AE51F67C54B00FBAF99 /* RuntimeLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimeLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BD1AE91F67C54B00FBAF99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7BD1AEB1F67C54B00FBAF99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				D7BD1B1F1F67D98000FBAF99 /* Person.m */,
 				D7BD1B241F68446600FBAF99 /* Person+Sex.h */,
 				D7BD1B251F68446600FBAF99 /* Person+Sex.m */,
+				D7741E511F69345200B1344F /* Dog.h */,
+				D7741E521F69345200B1344F /* Dog.m */,
 			);
 			path = RuntimeLearn;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				D7BD1AED1F67C54B00FBAF99 /* AppDelegate.m in Sources */,
 				D7BD1B201F67D98000FBAF99 /* Person.m in Sources */,
 				D7BD1AEA1F67C54B00FBAF99 /* main.m in Sources */,
+				D7741E531F69345200B1344F /* Dog.m in Sources */,
 				D7BD1B261F68446600FBAF99 /* Person+Sex.m in Sources */,
 				D7BD1AF61F67C54B00FBAF99 /* RuntimeLearn.xcdatamodeld in Sources */,
 			);
@@ -534,6 +540,7 @@
 				D7BD1B171F67C54B00FBAF99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7BD1B181F67C54B00FBAF99 /* Build configuration list for PBXNativeTarget "RuntimeLearnTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +549,7 @@
 				D7BD1B1A1F67C54B00FBAF99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7BD1B1B1F67C54B00FBAF99 /* Build configuration list for PBXNativeTarget "RuntimeLearnUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +558,7 @@
 				D7BD1B1D1F67C54B00FBAF99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
